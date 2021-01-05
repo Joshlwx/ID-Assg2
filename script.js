@@ -37,5 +37,16 @@ function setupMap(center) {
         trackUserLocation: true
     })
     );
+
 }   
+
+let url = "https://api.data.gov.sg/v1/transport/carpark-availability?date_time=YYYY-MM-DD[T]HH:mm:ss";
+fetch(url)
+.then(res => res.json())
+.then((out) => {
+  console.log('Checkout this JSON! ', out);
+})
+.catch(err => { throw err });
+
+
 
