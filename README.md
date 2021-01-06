@@ -1,6 +1,6 @@
 # ID_S10208533_Joshua_Assignment2
 
-Github link: https://joshlwx.github.io/ID-Assg2/
+Github link: https://joshlwx.github.io/IDAssignment2/
 
 For this project, I am doing a google map api which consist of the maps over the world and I included options for user to choose which directional method that the user prefer and also track user's current real-time location to navigate their surroundings.
 
