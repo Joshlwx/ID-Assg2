@@ -11,10 +11,10 @@ This website is mainly on focusing for people that are interested on looking for
 As a users type, I want my users to first know which location they want to find out about from point A to point B. Next, user can choose which direction method they prefer and estimate how long will the journey took.
 
 # Wireframe Link for Desktop View
-(Not done)
+https://xd.adobe.com/view/92c4817c-833f-4699-9d01-ff9b78853fcc-c797/
 
 # Wireframe Link for Mobile View
-(Not done)
+https://xd.adobe.com/view/961a4c6c-e9e4-4dfe-b8e6-227c5137ea90-c349/
 
 # Features
 
