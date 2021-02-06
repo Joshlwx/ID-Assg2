@@ -1,34 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
-    <link 
-    rel="stylesheet"
-    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
-    type="text/css"/>
-
-    <title>GoogleMap</title>
-
-<style>
-    body{
-    margin: 0;
-}
-
-#map{
-    height: 100vh;
-    width: 100vw;
-}
-
-</style>
-<script src="js/script.js" defer></script>
-
+    <title> E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id='map'></div>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+            <a href="index.html"><img src= "images/branding.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+             </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Welcome to the<br>Next Generation!</h1>
+                <p>Get your hands on the all new PlayStation 5<br> exclusively at ESGR - Buy yours now!.</p>
+                <a href="ps5_detail.html" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/ps5hp2.png">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!------ featured categories ------>
+    <div class="product">
+    <div class="categories">
+        <div class="small-container">
+            <h2 class="title">Controller Models</h2>
+            <div class="row">
+                <div class="col-3"><img src="images/ps_1.PNG"></div>
+                <div class="col-3"><img src="images/ps5.png"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!------ featured products ------>
+    <div class="product">
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="ps5_detail.html"><img src="images/ps5_cover.jpg"></a>
+                <a href="ps5_detail.html"><h4>PlayStation 5</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$799.00</p>
+            </div>
+            <div class="col-4">
+                <a href="ps4_pro_detail.html"><img src="images/ps4_cover.jpg"></a>
+                <a href="ps4_pro_detail.html"><h4>PlayStation 4 Pro</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+            <div class="col-4">
+                <a href="ps3_detail.html"><img src="images/ps3_cover.jpg"></a>
+                <a href="ps3_detail.html"><h4>PlayStation 3</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$299.00</p>
+            </div>
+            <div class="col-4">
+                <a href="nintend_switch_detail.html"><img src="images/nintendo_switch_cover.jpg">
+                <a href="nintend_switch_detail.html"><h4>Nintendo Switch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$499.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="ps5_controller_detaill.html"><img src="images/ps5_controller.jpg"></a>
+                <a href="ps5_controller_detaill.html"><h4>Ps5 Controller</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$79.00</p>
+            </div>
+            <div class="col-4">
+                <a href="xbox_series_x_detail.html"><img src="images/x_box_series_x.jpg"></a>
+                <a href="xbox_series_x_detail.html"><h4>Xbox Series X</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$699.00</p>
+            </div>
+            <div class="col-4">
+                <a href="xbox_series_s_detail.html"><img src="images/x_box_series_s.jpg"></a>
+                <a href="xbox_series_s_detail.html"><h4>Xbox Series S</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$399.00</p>
+            </div>
+            <div class="col-4">
+                <a href="nintendo_switch_lite_detail.html"><img src="images/nintendo_switch_lite.jpg"></a>
+                <a href="nintendo_switch_lite_detail.html"><h4>Nintendo Switch Lite</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$299.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="ps5_charging_dock_detail.html"><img src="images/charging_dock.jpg"></a>
+                <a href="ps5_charging_dock_detail.html"><h4>Charging Dock PS5</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$199.00</p>
+            </div>
+            <div class="col-4">
+                <a href="xbox_controller_detail.html"><img src="images/x_box_controller.jpg"></a>
+                <a href="xbox_controller_detail.html"><h4>Xbox controller</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$79.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href="playstation_VR_detail.html"><img src="images/PSVR_cover.jpg"></a>
+                <a href="playstation_VR_detail.html"><h4>PSVR</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$399.00</p>
+            </div>
+            <div class="col-4">
+                <a href="joycons_detail.html"><img src="images/joy_cons_cover.jpg"></a>
+                <a href="joycons_detail.html"><h4>Joy Cons</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$99.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ offer ------>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive_ps5.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on ESGR</p>
+                    <h1>PlayStation 5</h1>
+                    <small>
+                        Maximise your play sessions with near-instant load times for installed PS5™ games.
+                        Experience lightning-fast loading with an ultra-high-speed SSD, deeper immserion with support
+                        for haptic feedback, adaptive triggers and 3D Audio, * and an all-new generation of incredible
+                        PlayStation® games. <b>Get Yours Now!!!</b>
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- testimonial ----------->   
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>This is the best site to buy gaming accesories.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/user-1.png">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Finally bought a PlayStation 5! Can't wait to try it out.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/user-2.png">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>This services is great!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/user-3.png">
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------- brands ----------->   
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/sony_logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/Nintendo-Logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/xbox_logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/razor_logo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/legion_logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------- footer ----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/branding.png">
+                    <p>Our Purpose Is To Sustainably Make The Pleasure and Benefits of Gaming Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="icon">
+        <img src="images/ps5_icon.png">
+        <img src="images/ps5_icon.png">
+        <img src="images/ps5_icon.png">
+        <img src="images/ps5_icon.png">
+        <img src="images/ps5_icon.png">
+        <img src="images/ps5_icon.png">
+        <img src="images/ps5_icon.png">
+    </div>
+<!-------- js for toggle menu ----------->
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    </script>
+    
+
 </body>
 </html>
